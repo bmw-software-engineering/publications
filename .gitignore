@@ -1,0 +1,14 @@
+# EMACS Stuff
+*~
+
+# LaTeX Stuff
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb

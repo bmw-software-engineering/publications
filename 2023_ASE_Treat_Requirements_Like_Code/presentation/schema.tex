@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{z}
+
+\begin{document}
+
+\pagestyle{empty}
+\noindent
+To advance the timer by $timeIncrement?$ we simply add this to $time$,
+up to the $limit$ configured in the timer.  The timer's $limit$ is not
+changed.
+
+\begin{schema}{AdvanceTimer}
+  \Delta Timer\\
+  timeIncrement? : TIME
+\where
+  0 \leq timeIncrement? \\
+  limit' = limit\\
+  time' = min(time + timeIncrement?, limit)
+\end{schema}
+
+
+\end{document}
